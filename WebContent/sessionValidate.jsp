@@ -1,0 +1,1 @@
+<% if (!session.isNew() && session.getAttribute("name")==null)response.sendRedirect("home.html");%>

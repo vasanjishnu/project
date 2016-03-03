@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>E-WOMEN | JOIN US</title>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--
+ROMNA Template
+http://www.templatemo.com/free-website-templates/
+-->
+<!-- STYLESHEET CSS FILES -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+
+<script>
+
+function checkyear(){
+
+	var  year= document.getElementById('year').value;
+	var n=year.trim().length;
+	if(isNaN(year))
+	{
+		alert("invalid input!!");
+		document.joinform.year.focus();
+		document.getElementById("year").value = "";
+
+	}
+	else if(n==0)
+	{
+		alert("please input some alphabets!!");
+		document.joinform.year.focus();
+		document.getElementById("year").value = "";
+	}
+	else if(n!=4)
+	{
+		alert("please input a valid year!!");
+		document.joinform.year.focus();
+		document.getElementById("year").value = "";
+	}
+}
+
+
+
+function flname(){
+	var name = document.getElementById('name').value;
+	var n=name.trim().length;
+
+	if(!isNaN(name))
+	{
+		alert("input characters only!!");
+		document.joinform.name.focus();
+		document.getElementById("name").value = "";
+
+	}
+	else if(n==0)
+	{
+		alert("please input some alphabets!!");
+		document.joinform.name.focus();
+		document.getElementById("name").value = "";
+	}
+}
+function local(){
+	var locality = document.getElementById('locality').value;
+	var n=locality.trim().length;
+		if(!isNaN(locality))
+		{
+			alert("input characters only!!");
+			document.joinform.locality.focus();
+			document.getElementById("locality").value = "";
+
+		}
+	else if(n==0)
+	{
+		alert("please input some alphabets!!");
+		document.joinform.locality.focus();
+		document.getElementById("locality").value = "";
+	}
+}
+
+function checkcity(){
+	var c = document.getElementById("city").value;
+	var n=c.trim().length;
+		if(!isNaN(c))
+		{
+			alert("input characters only!!");
+			document.joinform.city.focus();
+			document.getElementById("city").value = "";
+
+		}
+	else if(n==0)
+	{
+		alert("please input some alphabets!!");
+		document.joinform.city.focus();
+		document.getElementById("city").value = "";
+	}
+}
+function checkstate(){
+	var state = document.getElementById('state').value;
+	var n=state.trim().length;
+		if(!isNaN(state))
+		{
+			alert("input characters only!!");
+			document.joinform.state.focus();
+			document.getElementById("state").value = "";
+
+		}
+	else if(n==0)
+	{
+		alert("please input some alphabets!!");
+		document.joinform.state.focus();
+		document.getElementById("state").value = "";
+	}
+}
+function checkcountry(){
+	var country = document.getElementById('country').value;
+	var n=country.trim().length;
+		if(!isNaN(country))
+		{
+			alert("input characters only!!");
+			document.joinform.country.focus();
+			document.getElementById("country").value = "";
+
+		}
+	else if(n==0)
+	{
+		alert("please input some alphabets!!");
+		document.joinform.country.focus();
+		document.getElementById("country").value = "";
+	}
+}
+function vpass(){
+	var password = document.getElementById('password').value;
+	var n=password.trim().length;
+	if(n==0)
+	{
+		alert("please input some alphabets!!");
+		document.joinform.password.focus();
+		document.getElementById("password").value = "";
+	}
+	else if(n<8)
+	{
+			alert("password must be atleast 8 characters long!!");
+			document.joinform.password.focus();
+			document.getElementById("password").value = "";
+	}
+}
+
+function cvpass(){
+	var password = document.getElementById('password').value;
+	var cpassword = document.getElementById('cpassword').value;
+	var n=cpassword.trim().length;
+	if(n==0)
+	{
+		alert("please input some alphabets!!");
+		document.joinform.cpassword.focus();
+		document.getElementById("cpassword").value = "";
+	}
+	else if(password!=cpassword)
+	{
+		alert("password do not match!");
+		document.joinform.cpassword.focus();
+		document.getElementById("cpassword").value = "";
+	}
+}
+
+function checkday(){
+	var day = document.getElementById('day').value;
+	var n=day.trim().length;
+		if(isNaN(day))
+		{
+			alert("invalid day!!");
+			document.joinform.day.focus();
+			document.getElementById("day").value = "";
+
+		}
+	else if(n==0)
+	{
+		alert("please input some alphabets!!");
+		document.joinform.day.focus();
+		document.getElementById("day").value = "";
+	}
+}
+
+function ph(){
+	var phone = document.getElementById('phone').value;
+	var n=phone.trim().length;
+		if(isNaN(phone))
+		{
+			alert("invalid phone number!!");
+			document.joinform.phone.focus();
+			document.getElementById("ph").value = "";
+
+		}
+	else if(n==0)
+	{
+		alert("please input some alphabets!!");
+		document.joinform.phone.focus();
+		document.getElementById("ph").value = "";
+	}
+	else if(n!=10)
+		{
+			alert("invalid phone number!!");
+			document.joinform.phone.focus();
+			document.getElementById("ph").value = "";
+
+		}
+}
+
+function valid()
+{
+flname();
+local();
+city();
+state();
+country();
+vpass();
+day();
+date();
+ph();
+}
+
+
+</script>
+
+
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<!-- preloader section -->
+<div class="preloader">
+  <div class="sk-spinner sk-spinner-rotating-plane"></div>
+</div>
+<!-- navigation section -->
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span> </button>
+      <a href="#" class="navbar-brand">E-WOMEN</a></div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+              <li><a href="login.html" class="smoothScroll">LOGIN</a></li>
+        <li><a href="index.html" class="smoothScroll">HOME</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- contact section -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6 col-md-offset-3  col-sm-offset-2 col-sm-8 col-sm-offset-2 title">
+        <h2>JOIN US</h2>
+        <hr>
+      </div>
+      <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 contact-form wow fadeInUp" data-wow-delay="0.9s">
+        <form action="joinus.jsp" method="post" name="joinform">
+
+
+
+		    			<input id="name" name="name" placeholder="First and last name" required="" type="text" class="form-control" onblur="flname()">
+
+
+		    			<input id="email" name="email" placeholder="example@domain.com" required="" type="email" class="form-control">
+
+
+		    			<input id="locality" name="locality" placeholder="Locality" required="" type="text" class="form-control" onblur="local()">
+
+
+		    			<input id="city" name="city" placeholder="City" required="" type="text" class="form-control" onblur="checkcity()">
+
+
+		    			<input id="state" name="state" placeholder="State" required="" type="text" class="form-control" onblur="checkstate()">
+
+
+		    			<input id="country" name="country" placeholder="Country" required="" type="text" class="form-control" onblur="checkcountry()">
+
+
+		    			<input type="password" id="password" name="password" required="" placeholder="Password" class="form-control" onblur="vpass()">
+
+		    			<input type="password" id="cpassword" name="cpassword" required="" placeholder="Confirm Password" class="form-control" onblur="cvpass()">
+
+
+		                  <select  class="form-control" name="BirthMonth" required>
+		                  <option value="">Month</option>
+		                  <option  value="01">January</option>
+		                  <option value="02">February</option>
+		                  <option value="03" >March</option>
+		                  <option value="04">April</option>
+		                  <option value="05">May</option>
+		                  <option value="06">June</option>
+		                  <option value="07">July</option>
+		                  <option value="08">August</option>
+		                  <option value="09">September</option>
+		                  <option value="10">October</option>
+		                  <option value="11">November</option>
+		                  <option value="12" >December</option>
+		                 </select>
+
+		                <input  class="form-control" maxlength="2" name="day" id="day" placeholder="Day" required="" onblur="checkday()"></label>
+		                <input  class="form-control" maxlength="4" name="year" id="year" placeholder="Year" required="" onblur="checkyear()"></label>
+
+
+		            <select  class="form-control" name="gender" required>
+		            <option value="select" selected disabled>i am..</option>
+		            <option value="male">Male</option>
+		            <option value="female">Female</option>
+		            <option value="others">Other</option>
+		            </select>
+
+
+		            <input id="phone" name="phone" placeholder="phone number" required="" type="text"  class="form-control" onblur="ph()"> <br>
+
+
+          <input type="submit" class="form-control" value="JOIN US" onclick="valid()">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer section -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h2 class="wow fadeIn" data-wow-delay="0.9s">Follow Us</h2>
+        <ul class="social-icon">
+          <li><a href="#" class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s"></a></li>
+          <li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
+          <li><a href="#" class="fa fa-behance wow bounceIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-dribbble wow bounceIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-android wow bounceIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-phone wow bounceIn" data-wow-delay="0.9s"></a></li>
+        </ul>
+      </div>
+      <div class="col-md-12 col-sm-12 copyright">
+        <p>&copy; E-WOMEN 2015. All Rights Reserved | Design: PACICODERS</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- JAVASCRIPT JS FILES -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

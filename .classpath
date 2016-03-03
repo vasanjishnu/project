@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="F:/sirs job/servlet-api-3.0.jar"/>
+	<classpathentry kind="lib" path="F:/sirs job/jxl-2.6.12.jar"/>
+	<classpathentry kind="lib" path="F:/sirs job/jxl-2.6.12-sources.jar"/>
+	<classpathentry kind="lib" path="F:/sirs job/New folder/httpclient-4.5.1.jar"/>
+	<classpathentry kind="lib" path="F:/sirs job/New folder/httpcore-4.4.3.jar"/>
+	<classpathentry kind="lib" path="F:/sirs job/New folder (2)/sendgrid-java.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/smtpapi-java-0.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/sendgrid-java-2.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/sendgrid-java-2.2.2.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
